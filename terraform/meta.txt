@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: ansible-user
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCnD1/ZIlwfV4WChfpScsA1h0sux/XjDiMqpz3/fm5D2Ew1JLlYzru/BeBbrAZPhskimPCM8W9MokLS7DIcq4FrFZGI75Xv1tGGQco6DDTydX9u9wEfuf3ckFsS8UqFYJf+5ttOTDngq+v/Jpdr1V3BNgN0km5TsNVnecvZ7eLxUnXo7LQ4NOzdfLbwYWaZLQXMBkjzMimmnWznipqCMlJXyEiYyeUSX1zW3woH7bQbd139M8mV0jGWlUiS8JuqNeSDn01joUz7PeqYB3he4xKAK3Wio47ShnlZPpet3u2Jv2Ahz5u7A0SP90shVg/LoJFBFoEa8AP/bkWsuidWy6Nu3p9lfEyuRFZ2MKkxP76ZGFdDmOc1JUs6sdNgKkywfkNXyFlwmvt3a3A4fuYHWbXY0Asbd4P+YmB6ktcNFIgD/jjosAR6j4iZd4YtQj8sv8delTwwc3Z3gFrMmtLk9O7dk19KuGcv779DZ9+B+fTyRNZJuekNlK4asm3hrZ+erw0= dmitry@canopus

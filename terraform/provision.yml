@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: True
+  gather_facts: False
+
+  tasks:
+    - name: Include role nginx
+      include_role:
+        name: nginx
+
+    - name: Flush handlers
+      meta: flush_handlers
+
+    - name: Perform smoke test
+      include_role:
+        name: smoke_test
+      
+    
+        

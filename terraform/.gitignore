@@ -1,0 +1,7 @@
+personal.auto.tfvars
+id_rsa_yc
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*

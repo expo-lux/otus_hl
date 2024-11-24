@@ -1,0 +1,13 @@
+---
+  - name: "Test request"
+    uri:
+      url: "{{ check_url }}"
+      return_content: true
+    register: http_check
+    retries: 3
+    delay: 10
+    until: http_check is succeeded
+    delegate_to: localhost
+    vars:
+      check_url: "http://{{ inventory_hostname }}/user/ansible-user"
+    
